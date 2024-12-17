@@ -25,7 +25,7 @@ as a function of charge/discharge cycle numbers.
 
 ## Results
 
-![Result]()
+![Result](https://github.com/krishnavasu314/my_project/blob/main/newplot.png)
 
 This image depicts the variation of electrolyte resistance (Re) and charge transfer resistance (Rct) with increasing charge/discharge cycles. We observe a gradual increase in both resistances, indicating battery degradation as the cycles progress.
 
