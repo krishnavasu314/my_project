@@ -20,35 +20,17 @@ Charge Transfer Resistance (Rct) vs Time
 Total Battery Impedance (Re + Rct) vs Time
 Combined Plot: All parameters over time.
 Plots are saved in the plots/ folder as interactive HTML files.
-
-Folder Structure
-plaintext
-Copy code
-battery-impedance-plots/
-│
-├── data/                     # Input dataset folder
-│   └── metadata.csv          # The dataset used for plot generation
-│
-├── plots/                    # Output folder for generated plots
-│   ├── electrolyte_resistance.html
-│   ├── charge_transfer_resistance.html
-│   ├── battery_impedance.html
-│   └── combined_plot.html
-│
-├── main.py                   # Python script to process data and generate plots
-│
-└── README.md                 # Project documentation
+   
 How to Use
 1. Clone the Repository
 bash
-Copy code
 git clone https://github.com/<your-username>/battery-impedance-plots.git
 cd battery-impedance-plots
 2. Install Dependencies
 Ensure you have Python installed. Install the required libraries:
 
 bash
-Copy code
+
 pip install pandas plotly
 3. Prepare the Dataset
 Place the metadata.csv file in the data/ folder.
@@ -57,8 +39,9 @@ Place the metadata.csv file in the data/ folder.
 Run the main.py script to process the dataset and generate the plots:
 
 bash
-Copy code
 python main.py
+
+
 5. View the Plots
 The plots will be saved in the plots/ folder. Open them in your browser to view.
 
@@ -74,10 +57,10 @@ Contributions are welcome! Here’s how you can help:
 Fork the repository.
 Create a feature branch:
 bash
-Copy code
+
 git checkout -b feature/your-feature-name
 Commit your changes and push to your branch:
 bash
-Copy code
+
 git push origin feature/your-feature-name
 Submit a pull request.
