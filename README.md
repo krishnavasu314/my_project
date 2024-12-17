@@ -1,68 +1,42 @@
- 
-Battery Impedance Analysis and Plotting
-This project visualizes the aging of Li-ion batteries through repeated charge/discharge cycles and impedance measurements using Plotly. The data is sourced from electrochemical impedance spectroscopy (EIS) experiments, which track battery health parameters over time.
+# NASA Battery Dataset Analysis
 
-Overview
+This repository contains Python code to analyze and visualize how battery impedance parameters, such as electrolyte resistance (`Re`) and charge transfer resistance (`Rct`), change as Li-ion batteries age through charge/discharge cycles. The analysis is based on the [NASA Battery Dataset](https://www.kaggle.com/datasets/patrickfleith/nasa-battery-dataset/data).
 
-Dataset:
-The dataset includes measurements of:
-Electrolyte Resistance (Re): Represents the resistance of the electrolyte.
-Charge Transfer Resistance (Rct): Indicates the resistance to charge transfer at the electrode-electrolyte interface.
-Battery Impedance (Re + Rct): Total battery impedance combining both resistances.
-Experimental Conditions:
-Frequency Sweep: 0.1 Hz to 5 kHz
-Operational Profiles: Charge, discharge, and impedance cycles
-Stopping Criterion: End-of-life (EOL) of batteries.
-Generated Plots
-The project creates the following interactive plots:
+---
 
-Electrolyte Resistance (Re) vs Time
-Charge Transfer Resistance (Rct) vs Time
-Total Battery Impedance (Re + Rct) vs Time
-Combined Plot: All parameters over time.
-Plots are saved in the plots/ folder as interactive HTML files.
-   
-How to Use
-1. Clone the Repository
-bash
-git clone https://github.com/<your-username>/battery-impedance-plots.git
-cd battery-impedance-plots
-2. Install Dependencies
-Ensure you have Python installed. Install the required libraries:
+## Dataset Description
 
-bash
+The dataset comprises measurements from Li-ion batteries subjected to different operational profiles (charge, discharge, and impedance). Impedance measurements were carried out using Electrochemical Impedance Spectroscopy (EIS) with frequency sweeps from 0.1Hz to 5kHz. 
 
+The study tracks aging effects due to repeated charge/discharge cycles, with experiments concluding when batteries reached the end-of-life (EOL) criteria.
+
+---
+
+## Visualization Overview
+
+Using the **Plotly** library, the code generates an interactive plot showing the variation of:
+
+- `Re`: Estimated electrolyte resistance (Ohms)
+- `Rct`: Estimated charge transfer resistance (Ohms)
+
+as a function of charge/discharge cycle numbers.
+
+---
+
+## Results
+
+![Result Image]()
+
+This image depicts the variation of electrolyte resistance (Re) and charge transfer resistance (Rct) with increasing charge/discharge cycles. We observe a gradual increase in both resistances, indicating battery degradation as the cycles progress.
+
+---
+
+## Steps to Reproduce the Analysis
+
+###  **Install Dependencies**
+Make sure to install the required libraries before running the code:
+
+```bash
 pip install pandas plotly
 
-3. Prepare the Dataset
-Place the metadata.csv file in the data/ folder.
-
-4. Run the Script
-Run the main.py script to process the dataset and generate the plots:
-
-bash
-python main.py
-
-
-5. View the Plots
-The plots will be saved in the plots/ folder. Open them in your browser to view.
-
-Using GitHub Pages
-You can host the plots online using GitHub Pages:
-
-Upload the plots/ folder to your GitHub repository.
-Enable GitHub Pages in the repository settings.
-Access the hosted plots using the provided GitHub Pages URL.
-Contributing
-Contributions are welcome! Here’s how you can help:
-
-Fork the repository.
-Create a feature branch:
-bash
-
-git checkout -b feature/your-feature-name
-Commit your changes and push to your branch:
-bash
-
-git push origin feature/your-feature-name
-Submit a pull request.
+---
