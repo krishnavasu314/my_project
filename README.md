@@ -3,6 +3,7 @@ Battery Impedance Analysis and Plotting
 This project visualizes the aging of Li-ion batteries through repeated charge/discharge cycles and impedance measurements using Plotly. The data is sourced from electrochemical impedance spectroscopy (EIS) experiments, which track battery health parameters over time.
 
 Overview
+
 Dataset:
 The dataset includes measurements of:
 Electrolyte Resistance (Re): Represents the resistance of the electrolyte.
@@ -32,6 +33,7 @@ Ensure you have Python installed. Install the required libraries:
 bash
 
 pip install pandas plotly
+
 3. Prepare the Dataset
 Place the metadata.csv file in the data/ folder.
 
