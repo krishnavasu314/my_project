@@ -1,4 +1,4 @@
-# NASA Battery Dataset Analysis
+# NASA Battery Dataset Analysis -ThinkClock Innovation Labs
 
 This repository contains Python code to analyze and visualize how battery impedance parameters, such as electrolyte resistance (`Re`) and charge transfer resistance (`Rct`), change as Li-ion batteries age through charge/discharge cycles. The analysis is based on the [NASA Battery Dataset](https://www.kaggle.com/datasets/patrickfleith/nasa-battery-dataset/data).
 
